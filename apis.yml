@@ -1,23 +1,70 @@
 aid: asignio
+
 name: Asignio
-description: 'Asignio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Asignio provides biometric authentication solutions that replace passwords with user‑drawn signatures, facial and voice biometrics. Their platform combats phishing, ransomware and deep‑fake attacks by verifying identity through AI‑driven behavioral markers, live selfie checks and multi‑modal biometrics, offering a password‑less, fraud‑resistant sign‑in experience for web and mobile applications.'
+
 url: https://raw.githubusercontent.com/api-evangelist/asignio/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Biometric
+- Authentication
+- Security
+- Identity
+- Fraud Prevention
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/asignio-llms.txt
+- type: Hosts
+  url: hosts/asignio-hosts.yml
+- type: Vendors
+  url: vendors/asignio-vendors.yml
+- type: DomainSecurity
+  url: security/asignio-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.web.asignio.com/
+- type: Blog
+  url: https://www.web.asignio.com/blog
+- type: Pricing
+  url: https://www.web.asignio.com/pricing
+- type: About
+  url: https://www.web.asignio.com/about
+- type: Contact
+  url: https://www.web.asignio.com/contact
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: No machine‑readable OpenAPI or other contract discovered; API endpoints return 404 and documentation appears to be rendered via Wix without downloadable specs.
+  evidence:
+    - url: https://api.asignio.com/openapi.json
+      status: 404
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
