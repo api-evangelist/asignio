@@ -1,0 +1,21 @@
+{
+  "repo": "asignio",
+  "feeds": [
+    {
+      "source": "https://www.web.asignio.com/",
+      "feed_url": "https://www.web.asignio.com/blog-feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.web.asignio.com/blog-feed.xml",
+      "feed_url": "https://www.web.asignio.com/blog-feed.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 13,
+  "fetched": "2026-10-03T12:30:02Z"
+}
