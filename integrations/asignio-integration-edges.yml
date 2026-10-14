@@ -1,0 +1,46 @@
+generated: '2026-10-14'
+method: searched
+checked:
+- okta/integrations/okta-integration-edges.yml
+- ping-identity/integrations/ping-identity-integration-edges.yml
+source:
+- okta/integrations/okta-integration-edges.yml
+- ping-identity/integrations/ping-identity-integration-edges.yml
+edges:
+- partner_name: Okta (own)
+  partner: okta
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.okta.com/integrations/asignio/
+  mirror_of: okta/integrations/okta-integration-edges.yml
+  apps:
+  - Asignio
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Zero Trust
+  badges:
+  - UNVERIFIED
+  features:
+  - INBOUND_FEDERATION
+- partner_name: Ping Identity (own)
+  partner: ping-identity
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.pingone.com/item/asignio-davinci-connector
+  mirror_of: ping-identity/integrations/ping-identity-integration-edges.yml
+  apps:
+  - Asignio Connector
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
